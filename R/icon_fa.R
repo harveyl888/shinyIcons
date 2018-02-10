@@ -57,3 +57,47 @@ icon_layer <- function(icons = list()) {
     iconTag <- tags$span(class = 'fa-layers fa-fw', tagList(icons))
   }
 }
+
+
+#' add a counter to an icon
+#'
+#' add a counter to an icon
+#'
+#' @param counter Counter value
+#' @param style Style attributes such as color or background
+#'
+#' @importFrom htmltools tags attachDependencies tagAppendAttributes
+#' @export
+layer_counter <- function(counter, style = NULL) {
+  iconTag <- tags$span(class = 'fa-layers-counter', counter)
+  if (!is.null(style))
+    iconTag <- tagAppendAttributes(iconTag, style = style)
+  iconTag
+}
+
+
+#' add text to an icon
+#'
+#' add text to an icon
+#'
+#' @param text Text
+#' @param class Additional classes to customize the icon style such as changing the
+#'     size or animating.  See \href{https://fontawesome.com/how-to-use/svg-with-js}{usage examples}
+#'     for details.
+#' @param style Style attributes such as color or background
+#' @param transform Apply power transforms (position, flip and rotate) - see
+#'     {https://fontawesome.com/how-to-use/svg-with-js#power-transforms}{power transforms}
+#'     for examples
+#'
+#' @importFrom htmltools tags attachDependencies tagAppendAttributes
+#' @export
+layer_text <- function(counter, class = NULL, style = NULL, transform = NULL) {
+  iconTag <- tags$span(class = 'fa-layers-text', counter)
+  if (!is.null(class))
+    iconTag <- tagAppendAttributes(iconTag, class = class)
+  if (!is.null(style))
+    iconTag <- tagAppendAttributes(iconTag, style = style)
+  if (!is.null(transform))
+    iconTag <- tagAppendAttributes(iconTag, `data-fa-transform` = transform)
+  iconTag
+}

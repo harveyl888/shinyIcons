@@ -2,6 +2,8 @@
 
 export(icon_fa)
 export(icon_layer)
+export(layer_counter)
+export(layer_text)
 importFrom(htmltools,attachDependencies)
 importFrom(htmltools,tagAppendAttributes)
 importFrom(htmltools,tagList)
