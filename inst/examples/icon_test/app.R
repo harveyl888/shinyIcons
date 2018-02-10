@@ -24,7 +24,10 @@ ui <- fluidPage(
         icon_fa('envelope'),
         layer_counter(1419, style = 'background:Tomato')
         ))
-  )
+  ),
+  br(),
+  br(),
+  icon_md('face', class = 'md-48')
 )
 
 server <- function(input, output, session) {

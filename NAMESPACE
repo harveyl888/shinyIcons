@@ -3,6 +3,7 @@
 export(html_dependency_fa5)
 export(icon_fa)
 export(icon_layer)
+export(icon_md)
 export(layer_counter)
 export(layer_text)
 importFrom(htmltools,attachDependencies)
