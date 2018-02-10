@@ -1,0 +1,24 @@
+---
+title: "RMarkdown Icon Test"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(shinyIcons)
+html_dependency_fa5()
+```
+
+### Icons in chunk
+
+```{r}
+  icon_fa('star')
+  icon_fa('star', class = 'fa-xs')
+  icon_fa('star', iconstyle = 'far', class = 'fa-5x')
+  icon_fa('spinner', class = 'fa-pulse')
+  icon_fa('magic', class = 'fa-5x')
+  icon_fa('magic', class = 'fa-5x', transform = 'rotate-90', style = 'color:Tomato')
+```
+
+### Inline icons
+This is an inline `r icon_fa('pencil-alt', transform = 'shrink-10 up-.5', mask = 'fas fa-comment')` icon

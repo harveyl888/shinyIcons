@@ -101,3 +101,12 @@ layer_text <- function(counter, class = NULL, style = NULL, transform = NULL) {
     iconTag <- tagAppendAttributes(iconTag, `data-fa-transform` = transform)
   iconTag
 }
+
+
+#' htmldependency for fontawesome5 in rmarkdown documents
+#'
+#' @importFrom htmltools tagList htmlDependency
+#' @export
+html_dependency_fa5 <- function(){
+  tagList(htmlDependency(name = 'fontAwesome', version = '5.0.6', src = system.file('www/fontawesome', package = "shinyIcons"), script = 'fontawesome-all.js'))
+}
