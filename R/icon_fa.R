@@ -42,3 +42,18 @@ icon_fa <- function(name, iconstyle = 'fas', class = NULL, style = NULL, transfo
     iconTag <- tagAppendAttributes(iconTag, `data-fa-mask` = mask)
   attachDependencies(iconTag, fa_dep)
 }
+
+
+#' layer multiple icons
+#'
+#' layer multiple icons
+#'
+#' @param icons A list of font awesome 5 icons, each defined by  \code{\link{icon_fa}()}
+#'
+#' @importFrom htmltools tags tagList
+#' @export
+icon_layer <- function(icons = list()) {
+  if (length(icons) > 0) {
+    iconTag <- tags$span(class = 'fa-layers fa-fw', tagList(icons))
+  }
+}
