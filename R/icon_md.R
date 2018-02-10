@@ -21,3 +21,12 @@ icon_md <- function(name, class = NULL) {
     iconTag <- tagAppendAttributes(iconTag, class = class)
   attachDependencies(iconTag, md_dep)
 }
+
+
+#' htmldependency for material design icons in rmarkdown documents
+#'
+#' @importFrom htmltools tagList htmlDependency
+#' @export
+html_dependency_md <- function(){
+  tagList(htmlDependency(name = 'MaterialIcons', version = '3.0.1', src = system.file('www/material_icons', package = "shinyIcons"), stylesheet = 'material-icons.css'))
+}
