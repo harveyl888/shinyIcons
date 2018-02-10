@@ -6,7 +6,7 @@ Authors@R: c(
     person("Harvey", "Lieberman", email = "harvey.lieberman@gmail.com", role = c("aut", "cre")),
     person("Dave", "Gandy", role = c("ctb", "cph"), comment = "Font-Awesome font"),
     person(family = "google", role = c("ctb", "cph"), comment = "Material icons"))
-Description: Fontawesome 5 and Material Design Icons for Shiny apps
+Description: Fontawesome 5 and Material Design Icons for Shiny apps.
 Imports:
     shiny,
     htmltools

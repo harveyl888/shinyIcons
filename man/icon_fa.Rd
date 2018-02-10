@@ -33,9 +33,11 @@ Create a fontawesome 5 icon
 \examples{
 icon_fa('star', iconstyle = 'far', class = 'fa-5s')        ## large open star
 icon_fa('spinner', class = 'pulse')                        ## animated spinner
-icon_fa('magic', class = 'fa-5x', transform = 'rotate-90', style = 'color:Tomato')    ## rotated icon
+icon_fa('magic', class = 'fa-5x',
+    transform = 'rotate-90', style = 'color:Tomato')    ## rotated icon
 \dontrun{
-htmltools::div(class = 'fa-4x', icon_fa('pencil-alt', transform = 'shrink-10 up-.5', mask = 'fas fa-comment'))    ## mask - pencil in comment
+htmltools::div(class = 'fa-4x', icon_fa('pencil-alt',
+    transform = 'shrink-10 up-.5', mask = 'fas fa-comment'))    ## mask - pencil in comment
 }
 
 }

@@ -4,9 +4,11 @@
 \alias{layer_text}
 \title{add text to an icon}
 \usage{
-layer_text(counter, class = NULL, style = NULL, transform = NULL)
+layer_text(text, class = NULL, style = NULL, transform = NULL)
 }
 \arguments{
+\item{text}{Text}
+
 \item{class}{Additional classes to customize the icon style such as changing the
 size or animating.  See \href{https://fontawesome.com/how-to-use/svg-with-js}{usage examples}
 for details.}
@@ -16,8 +18,6 @@ for details.}
 \item{transform}{Apply power transforms (position, flip and rotate) - see
 {https://fontawesome.com/how-to-use/svg-with-js#power-transforms}{power transforms}
 for examples}
-
-\item{text}{Text}
 }
 \description{
 add text to an icon
