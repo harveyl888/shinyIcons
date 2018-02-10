@@ -2,7 +2,7 @@ Package: shinyIcons
 Type: Package
 Title: Icons for Shiny apps
 Version: 0.0.1
-Author: Authors@R: c(
+Authors@R: c(
     person("Harvey", "Lieberman", email = "harvey.lieberman@gmail.com", role = c("aut", "cre")),
     person("Dave", "Gandy", role = c("ctb", "cph"), comment = "Font-Awesome font"),
     person(family = "google", role = c("ctb", "cph"), comment = "Material icons"))
